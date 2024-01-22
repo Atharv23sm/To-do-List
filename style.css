@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "comfortaa";
+
+}
+
+body {
+    background: rgb(54, 43, 28);
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+}
+
+#todo {
+    padding: 50px;
+    color: #000000;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    background: #ffe3b0;
+}
+
+.addtask {
+    width: 500px;
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addtask input {
+    border: none;
+    background-color: #00000000;
+    outline: none;
+    color: #000000;
+    width: 400px;
+    font-size: 17px;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "comfortaa";
+    font-size: 17px;
+}
+
+.addtask button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    background: rgb(255, 158, 23);
+}
+
+#tasklist {
+    margin: 55px 10px 0 10px;
+    list-style: none;
+    text-align: left;
+}
+
+#tasklist li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+#listdiv {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#listdiv input {
+    width: 20px;
+    height: 20px;
+}
+
+#listdiv span {
+    cursor: pointer;
+}
+
+@media screen and (max-width : 800px) {
+
+    .addtask {
+        width: 300px;
+    }
+
+    .addtask button {
+        width: 70px;
+        height: 40px;
+    }
+}
