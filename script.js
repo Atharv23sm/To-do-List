@@ -34,7 +34,6 @@ function addTask() {
         cross.style.cursor = 'pointer'
         cross.addEventListener('click', function () {
             tasklist.removeChild(task);
-            dataSave();
         });
 
         task_op.appendChild(check);
@@ -43,12 +42,6 @@ function addTask() {
         tasklist.appendChild(task);
 
         ipbox.value = ""
-
-        dataSave();
     }
-}
-
-function dataSave() {
-    localStorage.setItem("listdata", tasklist.innerHTML);
 }
 
